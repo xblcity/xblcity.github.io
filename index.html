@@ -33,17 +33,36 @@
         top: 0;
         right: 0;
         bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: plum;
+        font-size: 32px;
+        z-index: 9;
+        text-decoration: none;
+        letter-spacing: 2px;
+      }
+      .link:hover {
+        color: cornflowerblue;
       }
     </style>
   </head>
   <body>
-    <div id="area-render"></div>
+    <div id="area-render">
+      <a class="link" href="https://xblcity.github.io/blog">我的博客</a>
+    </div>
     <script
       type="text/javascript"
       color="93, 38, 193"
       pointColor="35, 122, 87"
       opacity="0.7"
-      zIndex="1"
+      zIndex="0"
       count="100"
       src="dist/canvas-nest.js"
     ></script>
